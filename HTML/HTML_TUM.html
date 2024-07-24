@@ -1,0 +1,563 @@
+HTML5 KONU ANLATIM NOTLAR
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1- LAYOUTS
+<!DOCTYPE html> <!-- web tarayıcısına bunun bir html dosyası oldugunu soylemek icin -->
+
+<html> <!-- temel html etiketidir, bu iki html arasına yazılanalr bu dokumana aittir-->
+
+<head> <!-- bu baslıkla ilgilidir, sitede gorunmez ama headle -->
+    <title>This is my first website</title>
+    <meta charset="UTF-8">          <!-- meta etiketi kapatma metası almaz, charset ataması karakterlerin herkeste duzgun gorunmesi icindir-->
+    <meta name="keywords" content="staj,iş,güç" >  
+    <meta name="discription" content="ugrasiyoruz canim sukur">   <!-- charset name vb. attribute'lerdir-->
+    <meta name="authors" content="reshide sultan yazdı canim bu siteyi"> 
+</head>
+
+<body> <!-- web sitesinin govdesidir, gosterilemk istenen her sey buraya yazılır-->
+<h1> BU BUGUNE KADAR YAZILMAYA BASLANAN EN KRALİCE WEB SİTESİDİR</h1> <!-- baslık yazmak icin h1 kullanılır -->
+</body>
+
+</html>
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+2- HEADING, PARAGRAPH
+<!-- ! + TAB ile layout otomatik oluşur-->
+ <!-- 
+!DOCTYPE html>
+<html lang="en">    langauge atandı, türkçe için tr 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the website of Reshide</title>
+</head>
+<body>
+    <h1>Naber Güzelim</h1>
+    <h4>Siz siz olun zaten biz olamazsınız</h4>
+    <p>bu bir paragraf denemesidir</p>  <!-- bu şekilde kendin bir paragraf ekleyebilirsin yada lorem10, lorem20 vb gibi lorem değerleri ile oluşturmak istediğin paragraf boyutunu girip şablon oluşturmak-->
+    <!--   <p>lorem100 + enter</p>   -->
+       <hr><!-- iki paragraf arasına bir çizgi eklemek istersen  <hr> kullan -->
+    <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Nihil, repellendus.</p>        <!-- paragraf arasına eklersen bir satır aşagıdan devam eder-->
+</body>
+</html>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+3-STYLING
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling</title>
+</head>
+<body style="background-color: aqua;">
+    <h1 style="color: blueviolet; font-size: 30px;">Baslık</h1> <!-- px piksel demektir-->
+    
+</body>
+</html>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+4-FORMATTING
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatting</title>
+</head>
+
+<body style="background-color: bisque;">
+    <h1>HTML5 Formatting</h1>
+    <p style="font-size: 30px;">
+        Lorem <strong>ipsum</strong>
+        dolor, <em>sit</em> amet consectetur adipisicing elit. Aliquam dicta placeat <small>quos nam</small> fuga in
+        <sub>omnis</sub> , molestias debitis aut velit odio, nesciunt libero laborum <mark>praesentium</mark> a? Ipsum aliquid
+        consequatur soluta saepe fuga tempora laboriosam hic?
+    </p>
+    <pre>  <!-- yazılan yazının biçiminin değişmemesi için-->
+        aysel git başımdan ben sana göre değilim
+        ölümüm birden olacak seziyorum
+        hem kötüyüm karanlığım biraz çirkinim
+        aysel git başımdan istemiyorum
+    </pre>
+
+</body>
+
+</html>
+
+<!-- 
+strong: kalın yazar
+em: italik yazar
+small: oranla daha kucuk yazar
+mark: sarı vurgulu yazar
+-->
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+5-LINKS
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <a href="http://www.google.com" target="_blank" title="google linki">google' gitmek için tıkla</a>
+    <hr>
+    <a href="Formatting4.html" target="_blank">formatting sitesi</a>
+</body>
+</html>
+
+<!--  
+_blank ile yeni açılan sekme ya ekranda açılır
+title ile kucuk mesaj kutusunda linkin açıklaması yazar
+-->
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+6-IMAGES
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Image</title>
+</head>
+<body>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGhcGxuewmuIKkqwqlbeOx_tnIduFLz00ZXg&s"
+    width="444"
+    alt="bal fotografıdır"/>
+    <img src="./images/johnny_depp.jpg" height="200"/>
+
+    <!-- bir resmi linke dönüştürmek -->
+     <a href="https://tr.wikipedia.org/wiki/Johnny_Depp" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Johnny_Depp_2020.jpg" alt="balaskim">
+     </a>
+</body>
+</html>
+<!-- 
+img kapanma parantezi almayan bi etikettir
+sadece weight yada height değeri verildiğinde aynı boyutlara getirir
+-->
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+7-TABLES
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>             <!-- css yapısı-->
+        table,
+        th,
+        td{
+            border:1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table>             <!--tablo yapısı-->
+        <thead>             <!--tablo başlık bölümü-->
+            <tr>                <!-- table row-->
+                <th>Name</th>       <!-- table head , kalın yazması için-->
+                <th>Department</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+
+        <tbody>             <!--tablo gövde bölümü-->
+            <tr>
+                <td>Reshide</td>    <!--tablo içeriği-->
+                <td>Yazılım</td>
+                <td>100000</td>
+            </tr>
+            <tr>
+                <td>Fatma</td>    <!--tablo içeriği-->
+                <td>İlahiyat</td>
+                <td>0</td>
+            </tr>            <tr>
+                <td>Mahmut</td>    <!--tablo içeriği-->
+                <td>Ticaret</td>
+                <td>100000</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+8-LISTS
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste Yapısı</title>
+</head>
+<body>
+    <!--HTML5 Unordered Lists-->
+    <ul type="square">
+        <li>Front End</li>
+        <ul type="circle">
+            <li>React</li>
+            <li>Vue</li>
+            <li>Angular</li>
+        </ul>
+
+        <li>Back End</li>
+        <ul type="angular">
+            <li>Python</li>
+            <li>Java</li>
+            <li>C Sharp</li>
+        </ul>
+    </ul>
+    <!--HTML5 Ordered Lists-->
+    <ol type="a">
+        <li>Aldığım Diller</li>
+        <ol type="I">
+            <li>C</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++</li>
+        </ol>
+    </ol>
+</body>
+</html>
+
+<!--HTML5'te iki adet liste türü vardır. 
+1. Unordered Lists ~ sırasız liste
+ul etiketi ile yapılır
+li etiketi liste elemanlarını yazdırmak için kullanılır
+
+2. Ordered lists ~ sıralı liste
+ol etiketi ile yapılır-->
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+9-VIDEOS
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video src="./videos/tom_and_jerry.mp4" width="1200px" controls autoplay >        <!-- başta kullanılan . aynı dizinde oldugunu gösterir, bu dizin demektir-->
+        Tarayıcı bu içerik türünü desteklememektedir.
+        
+    </video>
+</body>
+</html>
+
+<!-- controls kelimesi video özelliklerini aktif etmek için
+ autoplay site açıldıgında video otomatik başlasın diye-->
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ 10-AUDİOS
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <audio src="./audios/neydenbudunya.mp3" controls autoplay>
+        Tarayıcı bu içeriği desteklemiyor...
+    </audio>
+</body>
+</html>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+11-BLOCKINLINE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block&Inline</title>
+    <style>
+        h1{
+            width: 100px;
+            height: 100px;
+        }
+        <!--
+            a{
+            width: 100px;
+            height: 100px;
+        }
+        --> 
+    </style>
+</head>
+<body>
+    <h1>Reshide'nin Azap Dolu Günleri Şahanesin</h1>
+    <a href="#">Link</a>  <!-- Link bi yere gitmesin diye # konulabilir-->
+</body>
+</html>
+
+<!--Block elementler bulundugu satırın tamamını kaplar.
+İnline elementler sadece yazısı kadar yer kaplar
+Hangi elementlerin block/inline olduguna w3schools sitesinden bakabilirsin
+tarayıcıdan kodu inceleye girdiğinde display özelliği de block/inline gösterir
+Block elemanlarda width/height özellikleri verilebilir. İnlineda verilmez
+Block eleman inline'a dönüştürülebilir-->
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+12-DIVSPAN
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divler ve Spanler</title>
+    <style>
+        span{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div>Bu bir div</div>
+    <span>Bu bir span</span>
+    <p>Lorem ipsum,<span>dolor sit</span> amet consectetur, adipisicing elit. Itaque, distinctio.</p>
+</body>
+</html>
+<!-- Div bir block elemandır
+     Span bir inline elemandır
+     Navigation Bar blokları, footer oluştururken divleri kullanacagız
+     Belirli bir text alanını düzenlerken spanleri kullanacagız-->
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+13-IDCLASS
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="navbar" class="navbar_menu"></div>
+    <div id="main"></div>
+    <ul>
+        <li class="article-item d-flex d-flex1">hey</li>
+        <li class="article-item">mey</li>
+        <li class="article-item">cey</li>
+        <li class="article-item">key</li>
+    </ul>
+    <div id="footer"></div>
+</body>
+</html>
+<!--
+Bu konuyu anlamak ve verimli kullanmak için css gereklidir, giriş yaptık
+ID özgündür sadece bir bloğa özgü verilmelidir. biden çok aynı id verilirse hata vermez ama kontrol etmesi zor olur
+Class aynı özellikte, görünümde olması istenen tüm nesnelere verilebilir
+Bir elemanın birden fazla classı olabilir
+Bir elemanın hem id si hem classı olabilir
+-->
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+14-SAYFAICILİNKLER
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~Bookmarks ~~ Sayfa İçi İşaretçiler</title>
+</head>
+<style>
+    .box{
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        padding: 50px;
+}
+#box1{
+    background: red;
+}
+#box2{
+    background: blue;
+}
+#box3{
+    background: yellow;
+}
+#box4{
+    background: green;
+}
+#box5{
+    background: peru;
+}
+</style>
+<body>
+    <ul>
+        <li><a href="#box1">Box 1</a></li>
+        <li><a href="#box2">Box 1</a></li>
+        <li><a href="#box3">Box 1</a></li>
+        <li><a href="#box4">Box 1</a></li>
+        <li><a href="#box5">Box 1</a></li>
+    </ul>
+    <div id="box1" class="box">BOX 1</div>
+    <div id="box2" class="box">BOX 2</div>
+    <div id="box3" class="box">BOX 3</div>
+    <div id="box4" class="box">BOX 4</div>
+    <div id="box5" class="box">BOX 5</div>
+</body>
+</html>
+<!--geekforgeeks sayfasındaki gibi bir seçeneğe tıklandıgında o seçeneğin 
+sayfasına gitmek yani bir websitesinin içinde birden çok site barındırmak
+ve bu linklere gitmek için kullanılır-->
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+15-FORMS
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form ve Inputs</title>
+</head>
+
+<body>
+    <form>
+        <!-- INPUTS -->
+        Name: <input type="text" name="" id="" placeholder="your name">
+        <br>
+        <label for="Surname">Surname:</label> <!--labelin üstüne tıklandıgında da input alanını aktifleştirsin diye-->
+        <input type="text" id="Surname">
+        <br>
+
+        <label for="email">Email:</label> <!--email şeklinde girilmezse submit ederken hata verir-->
+        <input type="email" id="email" name="email">
+        <br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+        <br>
+
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date">
+        <br>
+
+        Gender <br>
+        Male <input type="radio" name="gender" value="Male" checked>
+        <!--Tek bir seçim isteniyorsa name'lerinn aynı olması gerek-->
+        Female <input type="radio" name="gender" value="Female" chechked>
+        <!-- radiobuttonda iki tane checked kullanıldıgından sadece ilkini checked gönderiyor-->
+        Other <input type="radio" name="gender" value="Other">
+        <br>
+
+        Hobbies <br>
+        <!--Birden çok seçim yapılabileceğinde checkbox kullanılır. Eğer seçili gelsin isteniyorsa yanına chechked eklenir-->
+        Technology<input type="checkbox" name="tech" id="tech" checked>
+        Music<input type="checkbox" name="music" id="music">
+        Art<input type="checkbox" name="art" id="art">
+        <br>
+
+        Degree <br> <!--degree: derece-->
+        <select name="degree" id="degree">
+            <option value="bachelor" selected>Lisans</option> <!--lisans selected işaretlendiği için seçili gelecek-->
+            <option value="msc">Yüksek Lisans</option>
+            <option value="dokrora">Doktora</option>
+        </select> <br>
+
+        <textarea name="message" id="message" rows="10" cols="30" placeholder="Your message"></textarea>
+        <!--messagebox-->
+        <br>
+
+        <input type="submit" value="Submit">
+        <!-- submit action içine formda doldurulan bilgilerin gönderilmesini sağlar. submit:göndermek-->
+        <button type="submit">Gönder</button> <!--submit butonunu bu şekilde pushbutton olarak da oluşturabiliriz-->
+        <br>
+
+        <input type="reset" value="Sıfırla"> <!--doldurulan tüm inputları sıfırlar-->
+        <button type="reset">Sıfırla</button> <!-- aynı şey ama button-->
+        <br>
+    </form>
+</body>
+
+</html>
+
+<!-- 
+Eğer oluşan formu bir backend diline göndereceksek
+form etiketinin yanında otomatik çıkan action="" içini dosya.py
+gibi doldurup gönderebiliriz, bu kodda kullanmadık
+ 
+Form yanına yazılan method="" ile POST yada GET REQUEST
+metotları atanabilir. Bu kodda kullanmadık-->
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+16-SEMANTIK
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantik Etiketler ~ Anlamsal</title>
+</head>
+<body> 
+    <!--HTML5'ten önce etiketler böyle kullanılırdı ve bu web tarayıcıları tarafından anlaşılmazdı
+    bu sebeple yeni etiketler oluşmuştur.
+    <div id="header">
+        <div id="nav-top"> </div>
+    </div>
+    
+    <div id="main"></div>
+    <div class="sidebar"></div>
+    <div id="footer"></div> -->
+    <header>
+        <h1>Yazılım Bilimi</h1>
+        <nav id="topnav">
+            <a href="#">Home</a>
+            <a href="#">Contant</a>
+            <a href="#">Service</a>
+        </nav>
+    </header>
+
+    <section id="section-little">
+        <article>Story 1</article>
+        <article>Story 2</article>
+        <article>Story 3</article>
+    </section>
+
+    <section id="section-big">
+        <article>Story 1</article>
+        <article>Story 2</article>
+        <article>Story 3</article>
+    </section>
+
+    <aside>
+        <nav id="sidenav"></nav>
+    </aside>
+
+    <footer>
+        Copyright
+    </footer>
+</body>
+</html>
+
+<!--sayfadaki en güçlü eleman h1 yani başlıktır
+Anlamsız elemanlar div ve spanlerdir. Bir arama motoru 
+h1, p vs gördüğünde bunları anlar ama span ve div gördüğünde 
+anlam veremez, içeriğini bilmez
+Semantik etiketlerle görsel değişmez sadece anlam kazanır,arama optimizasyonu sağlanır
+Genellikle sayfalarda bir header bir footer olur ancak daha fazla kullanılırsa da html hata vermez
+*article, aside, details, figcaption, figure, footer,header,main,mark,nav,section,summary,time-->
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

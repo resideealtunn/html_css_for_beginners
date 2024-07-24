@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+    /*selector:pseudo_class{            kullanımı bu şekildedir
+
+    }*/
+        a{
+            font-size: 24px;
+        }
+        a:link{
+            color:blue;        /*hiç tıklanmayan linklerin rengi*/
+        }
+        a:visited{                  /*bir linke tıklandıktan sonra rengi */
+            color: red;
+        }
+        a:hover{
+            color:green;        /*mouse üzerine geldiğinde renk değiştir*/
+        }
+        a:active{                       /*tıklanırken*/
+            color:black;
+        }
+        input{
+            font-size: 1.5em;
+            margin: 10px;
+            border-radius: 4px;
+            border: 1px solid black;
+        }
+        input:focus{
+            outline: 0;
+            border: 2px solid red;
+        }
+        #face{
+            color: white;
+            background: #0866FF;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        #face:hover{
+            background:white ;
+            color:#0866FF;
+            border:1px solid #0866FF;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">Link Bırakıyorum</a>
+    <br>
+    Name:
+    <input type="text" placeholder="Name">
+    <br>
+    <a id="face" href="https://www.facebook.com/?locale=tr_TR">Facebook</a>
+</body>
+</html>

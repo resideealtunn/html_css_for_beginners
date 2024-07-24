@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element</title>
+    <style>
+        .para1{
+            font-size: 1.5em;
+            letter-spacing: 2px;        /*harf aralığı*/
+            line-height: 1.5em;
+        }
+        .para1::first-line{     /*ilk satırı */
+            color: red;
+        }
+        .para1::first-letter{       /*ilk harfi*/
+            color: blue;
+            font-size: 50px;
+        }
+        .para1::before{
+            content: url("./images/logo.png");
+        }
+        .para1::after{
+            content: "hello canim THE END";
+        }
+    </style>
+</head>
+<body>
+    <p class="para1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias nesciunt, eligendi, enim velit quaerat cupiditate sapiente dolor omnis nobis soluta debitis? Ratione nam distinctio magni consectetur odio adipisci enim beatae nesciunt. A tenetur aliquam iusto in non labore fugit, odit repellat? Quod, eaque? Necessitatibus dolores sit et voluptas ratione soluta nam, facilis molestias veritatis commodi expedita quis recusandae asperiores cupiditate saepe nesciunt magni dignissimos ut corrupti ea repellendus fugiat nobis. Quos vitae officia a nostrum natus, deleniti perferendis minus? Sequi vero, sunt voluptatum id nobis dolor blanditiis deserunt nisi odit incidunt reiciendis nihil, fuga quia eligendi, necessitatibus perferendis. Dolorem, alias!</p>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Attributes</title>
+    <style>
+        h1 {
+            background: greenyellow;
+        }
+
+        .heading1 {
+            text-align: center;
+            /*yazı nereye yaslı olsun*/
+        }
+
+        .heading2 {
+            text-align: left;
+        }
+
+        .heading3 {
+            text-align: right;
+        }
+
+        div {
+            background: none;
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        p {
+            letter-spacing: 1px;
+            /*harfler arası boşluklar*/
+        }
+
+        span {
+            text-decoration: overline;
+            /*üstü altı vs çizili olsun mu özelliği*/
+        }
+
+        #baslik {
+            background: pink;
+            text-transform: uppercase;      /*büyük küçük harf dönüşümleri*/
+        }
+        a{      /*a default olarak underline gelir*/
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading1">Başlık 1 </h1>
+    <h1 class="heading2">Başlık 2 </h1>
+    <h1 class="heading3">Başlık 3 </h1>
+
+    <div>
+        <h1 id="baslik">article 1</h1> <!--article:madde makale-->
+        <p>Lorem ipsum <span>dolor</span> sit amet consectetur adipisicing <a href="#">elit</a>. Incidunt, reiciendis?</p>
+    </div>
+</body>
+
+</html>

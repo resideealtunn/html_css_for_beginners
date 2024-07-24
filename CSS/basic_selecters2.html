@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Selecters</title>
+    <style>
+        h1,p{       /*birden çok eleman türünü seçmek için*/
+            color: red;
+            background-color: yellowgreen;
+        }
+
+        #logo{      /*id'ye göre etiket seçmek*/
+            color: red;
+            background-color: yellowgreen;
+        }
+        .info{      /*class'a göre etiket seçmek*/
+            color: red;
+            background-color: yellowgreen;
+        }
+        #logo , .lead{      /*class'ı lead olanları veya id'si logo olanları seç */
+            color: red !important;
+            background-color: yellowgreen;
+        }
+        #para1.lead{         /*class'ı lead olanları ve id'si para1 olanları seç */
+            color: red;
+            background-color: yellowgreen;
+        }
+        a{
+            /*text-decoration:underline;        default gelir*/
+            text-decoration: none;
+        }
+        ul li a{
+            text-decoration: double;        /*hiyerarşik parent children yapısı; ul'nin altındaki li'nin altındaki a'ları seç*/
+        }
+        .info span{
+            color: red;
+            background-color: yellowgreen; 
+        }
+        .info .primary{
+            color: blue;
+        }
+        *{
+            font-size: 30px;
+        }                  /*tüm elemanları seç, evrensel seçici*/
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>Header 1</h1>
+        <h1>Logo</h1>
+
+        <ul>
+            <li>
+                <a href="#">Contant</a>
+            </li>
+            <li><a href="#">Services</a></li>
+        </ul>
+    </header>
+
+    <h1>Header 2</h1>
+    <p id="para1" class="lead info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non est doloremque natus distinctio velit, vitae id suscipit itaque minus quisquam voluptas impedit consectetur error rerum maxime facere laudantium quasi reprehenderit.</p>
+    <br>
+    <p class="info">Lorem ipsum <span class="primary">dolor</span>  sit amet, consectetur adipisicing elit. Libero, quis maiores. Assumenda culpa, ab provident soluta quae eligendi sit molestias, nisi placeat neque odit quisquam sunt ea expedita sapiente aspernatur!</p>
+    <br>
+    <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nihil iure dolore tenetur reiciendis facere earum et ipsum corrupti ipsam sint sit ipsa voluptate aliquid hic voluptatibus dolorum, eos officia!</p>
+    <br>
+    <p>Test Paragraph</p>
+    <a href="">Home</a>
+</body>
+</html>
+
+<!--
+NOT
+Kodun devamında yazılan özellik yukarıdaki özelliği ezer.Bu sebeple
+Genel Seçiciler yukarılara yazılır, özellikler özelleştikçe aşağılara yazılır
+Eğer bir özelliğin aşağıda ezilmemesi isteniyorsa !important anahtar kelimesi kullanılır bknz:str22-->

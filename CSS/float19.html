@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        .image1 {
+            width: 25%;
+            float: left;            /*görsel sola yapışır, ardından gelen yazı direkt başlar*/
+            margin-right: 20px;
+        }
+        .image2 {
+            width: 25%;
+            float: right;
+        }
+
+        .box{
+            width: 40%;
+            height: 100px;
+            float: left;
+        }
+        .box1{
+            background-color: aqua;
+        }
+        .box2{
+            background-color: rgb(240, 43, 243);
+        }
+        .box3{
+            background-color: rgb(233, 204, 17);
+        }
+    </style>
+</head>
+
+<body>
+    <img class="image1" src="./images/worldsmostbeauty.png">
+    <img class="image2" src="./images/worldsmostbeauty.png">
+    <div style="clear: both;"></div>            <!-- both ataması iki kez float kullandıgımız için, eğer kendinden önce float kullanıldıysa onu temizler. yazı yine aşağıdan başlaması gereken yerden başlar-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt hic, quas quod distinctio vitae dicta ullam fugit deleniti autem nisi voluptatibus exercitationem impedit natus ipsam mollitia culpa possimus qui at, maxime molestiae quaerat animi. Ab facere aut aliquid consequuntur beatae veniam recusandae consectetur esse architecto reiciendis repellendus, aspernatur magni voluptatum sapiente illum quibusdam, omnis ipsam ad dicta accusamus eveniet optio. Vero asperiores necessitatibus libero. Asperiores ipsa voluptatibus eaque quidem ipsam nulla architecto alias, harum, commodi soluta consectetur similique ab quia obcaecati. Eaque consequuntur maiores aliquid odit rem autem recusandae minus dolor beatae reiciendis pariatur aut optio, repudiandae possimus quasi necessitatibus similique in rerum excepturi perspiciatis sit tenetur deserunt! Expedita, molestias nobis similique asperiores quidem quaerat perspiciatis atque. Quod obcaecati suscipit facere, laudantium nulla, accusamus illo culpa eos cumque fuga est laboriosam numquam cupiditate. Soluta quae minus maxime incidunt dignissimos illum at ipsa. Dolorem earum dicta, hic nihil molestias distinctio magni non commodi voluptate unde eligendi fugiat provident alias facilis numquam rerum porro asperiores fugit ipsam deserunt accusantium voluptas ab, obcaecati dolor. Repudiandae consequatur quidem expedita veniam. Possimus tenetur aliquid nemo dignissimos illum consectetur eaque accusantium. Quasi libero aliquam, eos dolorem et veritatis beatae excepturi reprehenderit mollitia laboriosam blanditiis consectetur! Sequi velit iste deleniti odio consectetur similique ratione culpa praesentium quo soluta eaque consequuntur magni iusto qui, natus illum officia ab! Dignissimos eveniet ad quod totam veritatis impedit, modi soluta rem voluptatibus debitis quisquam officiis suscipit quo, similique enim earum. Quo harum aut pariatur nesciunt expedita fugit error, odit sapiente eveniet.</p>
+    <!--style'daki float resimleri konumlandırmak için; div'deki clear yazıyı düzgün yazdırmak için-->
+    <br><br><br><br>
+
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero unde repellat, inventore totam repellendus nulla excepturi architecto numquam tenetur magni? Doloremque molestiae assumenda neque unde. Impedit eos voluptatum, debitis dolor dolorem incidunt reiciendis delectus facere natus magni provident nihil non totam suscipit accusamus quaerat dignissimos, libero molestias ea culpa, perspiciatis fugit distinctio repellat maxime! Ipsa quis nulla fuga, consectetur reprehenderit accusamus saepe accusantium ab cum. Odio quos earum consequuntur, ipsa suscipit enim? Reiciendis quas quasi doloremque officia. Nihil modi molestias aperiam deserunt ipsam reiciendis velit ipsum soluta, voluptatum vero quo porro, consequuntur temporibus eius deleniti consectetur. Placeat itaque facere totam consequuntur quia. A facilis nisi rem tempora praesentium cum distinctio corrupti iste aut debitis delectus repellendus iusto asperiores maxime, ad dolor illum accusamus placeat provident quibusdam id consectetur. Consequuntur distinctio recusandae et facilis itaque perferendis a vel! Nesciunt tempora, quaerat quam nam debitis laboriosam, reiciendis distinctio, aliquid molestias provident pariatur? Repellendus veritatis enim repellat ipsum quaerat, eaque incidunt ex ea inventore. Magnam nesciunt laboriosam ea commodi! Voluptatibus laboriosam, tenetur commodi rerum maiores dicta earum eaque quasi ex at vero fugiat molestiae sapiente, dolorum a perferendis nihil nobis corporis, temporibus esse. Quia corporis tempore quisquam consequatur, assumenda eveniet voluptate repudiandae deserunt autem, incidunt modi iure nemo quibusdam ipsa quasi fugit porro quae dolor dolorum dicta labore voluptates fuga cum enim. Sapiente, mollitia reiciendis tenetur modi nemo dolore odit repellat. Maxime labore quasi adipisci rem delectus quos aperiam corporis, vitae quisquam eligendi explicabo, necessitatibus quaerat quo cupiditate assumenda ea. Quaerat, doloremque incidunt.</p>
+
+</body>
+</html>
+<!--Eskiden konum düzenlemelerinde float kullanılırken şimdi flexbox kullanılmaktadır.
+Float'ı sadece yazıyı resmin devamına eklemek için kullan-->

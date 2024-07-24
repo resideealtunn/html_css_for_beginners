@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet"> <!--google fonts'larda web dökümanlarından copy paste yaptım-->
+    <style>
+        h1 {
+            font-family:Arial, Helvetica, sans-serif;       /*üç tane vermesindeki amaç sitenin açıldıgı cihaz ilk yazı tipini desteklemiyorsa alternatif yazı stilleri vermektir*/
+            font-size: 25px;
+        }
+
+        p {
+            font-family: 'DM Sans', sans-serif;
+            letter-spacing: 2px;
+            font-size: 16px;
+            line-height: 24px;      /*satırlar arası boşluklar*/
+            line-height: 1.5em;     /*24px ile aynı boyuttur, her yerde piksel takibi yapmak zor olacağından oran atamaları kullanmak mantıklıdır*/
+            
+        }
+        #p2{
+            font-size: 2.5rem;      /*html font size!ı 16px verilmiş 2.5 katı 40 yap dedik*/
+        }
+        html{
+            font-size: 10px;        /*bu şekilde html'in font-size'ı da düzenlenebilir*/
+        }
+        div{
+            width: 400px;
+            height: 400px;
+            border:1px solid black;
+        }
+        div span{
+            font-size: 75%;     /*parent'ının %75ini alır*/
+        }
+        #p3{
+            font-style: italic;     /*italic normal*/
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Başlık 1</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste corporis esse ab cum maiores porro laborum error in ullam quasi, incidunt nulla voluptatibus quam officia dolorem quod, minima voluptatem. Quis, magnam rem. Iure nisi, quam fuga, cumque voluptatibus autem et expedita commodi adipisci vel, ea aut ducimus libero quis ut!</p>
+    <p id="p2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste corporis esse ab cum maiores porro laborum error in ullam quasi, incidunt nulla voluptatibus quam officia dolorem quod, minima voluptatem. Quis, magnam rem. Iure nisi, quam fuga, cumque voluptatibus autem et expedita commodi adipisci vel, ea aut ducimus libero quis ut!</p>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quod odio neque eos! Non id <span>consectetur</span> tenetur nobis sint omnis amet quis quaerat. Nostrum consequuntur id voluptatibus, enim dolorem consequatur.</p>
+    </div>
+    <p id="p3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste corporis esse ab cum maiores porro laborum error in ullam quasi, incidunt nulla voluptatibus quam officia dolorem quod, minima voluptatem. Quis, magnam rem. Iure nisi, quam fuga, cumque voluptatibus autem et expedita commodi adipisci vel, ea aut ducimus libero quis ut!</p>
+
+</body>
+
+</html>
+
+<!--CSS'te uzunluk atamanın 2 yolu vardır. 
+1-Absolute Lenghts ~~ Mutlak Uzunluklar
+cm mm in(inches) px pt(points) pc(picas)
+2-Relative Lenghts ~~ Göreceli Uzunluklar
+em : verilen font size'a göre aynı element içinde boyutlandırma
+ex 
+ch 
+rem : html'in font size'ına göre boyutlandırma 
+vw : sayfa genişliğinin %1i verilir
+vh : sayfa yüksekliğinin %1i verilir
+vmin 
+vmax 
+% : parent'in font size'ına oranla boyutlandırma
+-->

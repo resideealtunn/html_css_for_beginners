@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Parent Özellikleri</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            text-align: center;
+            width: 200px;
+            border: 1px solid black;
+            background: #f2f2f2;
+            height: 200px;
+            margin: 10px;
+        }
+        .container{
+            width: 75%;
+            margin: 0 auto;     /*sayfayı ortalasın*/
+            display: flex;      /*yeni çıkan bi özelliktir, önceden block ve inlinela ile flex özellikleri sağlanmaya çalışılırmış*/
+            min-height: 600px;  /*eğer container elemanları 600'ü taşarsa height genişlesin*/
+            background: black;
+            flex-direction: row;     /*default değeri row'dur, alt alta sıralamak istenirse column yapılır*/
+            justify-content:flex-start;        /*container elemanlarının container içinde sıralanış şekli ~ aralarındaki boşluklar default'u flex-start*/
+            align-items:stretch;          /*container elemanlarının uzunluklarının şekli, defaulu stretch: elemanlar container heightini alır*/
+            flex-wrap:wrap ;        /*container elemanlarının satıra sığması, defaultu nowrap'tir container elemanlarını aynı satıra sığdırmaya çalışır*/
+        }
+    </style>s
+    
+</head>
+s
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Article 1</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 2</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 3</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 3</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 3</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 3</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 3</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 3</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 3</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 3</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 3</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 3</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 3</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+</body>
+</html>
+<!--  !!! Flex Direction: column denildiği zaman x ekseni y, y ekseni x gibi davranır. yatayda align-items ; dikeyde justify-content kullanılır
+  justify-content main axis'e göre yani x eksenine göre sıralıyor ama column oldugundan görsel olarak y ekseninde sıralıyor-->

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders & Radius</title>
+    <style>
+        #box1{
+            background: #a7a7a7;
+            border-width: 5px;
+            border-color: turquoise;
+            border-style: ridge;
+            border-radius: 5 px;        /*5 px'e göre kenarları ovalleştir*/
+            /*bunu da tek satırda yazabiliriz, tek satırda border ataması:*/
+            border:5px red solid;
+            /*tek kenara atama yapmak için*/
+            border-left-color: blueviolet;
+            border-left-width: thin;
+            border-left-style: dashed;
+
+        }
+        #box2{
+            background-color:#f6a8b3;
+            width: 50px;        /*bu 3 özellik pikselleri aynı verilirse yuvarlak div oluşur*/
+            height: 50px;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">
+        <h1>Başlık 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, alias.</p>
+    </div>
+    <div id="box2"></div>
+</body>
+</html>

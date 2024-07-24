@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nth Child Selector</title>
+    <style>
+        p{
+            font-size: 1.5em;
+        }
+        p:nth-child(2){         /*1. çocuğu*/
+            color: red;
+        }
+        p:nth-child(3){
+            color: blue;
+        }
+        p:first-child{
+            background-color: bisque;
+        }
+        p:last-child{
+            background-color: blueviolet;
+        }
+        p:nth-child(even){
+            color: aquamarine;      /*çift sayılı çocukları*/
+        }
+        p:nth-child(odd){           /*tek sayılı çocukları*/
+            color: violet;
+        }
+
+        ul{
+            font-size: 1.5em;
+            list-style-type: none;  /*liste görünümünün yanında madde işareti olmasın*/   
+        }
+        /*
+        nth-child(an+b) şeklinde bir kullanıma sahiptir. n ve b değerleri başlangıçta 0 kabul edilir. eğer b verilmediyse 0 kalır
+        */
+        ul li:nth-child(2n){
+            color: pink;
+        }
+        ul li:nth-child(2n+1){
+            color:rgb(156, 156, 4);
+        }
+        ul li:nth-child(n+4){
+            background: lightsalmon;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, ipsam?</p>  <!--1.çocuk-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, ipsam?</p>  <!--2.çocuk-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, ipsam?</p>  <!--3.çocuk-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, ipsam?</p>  <!--4.çocuk-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, ipsam?</p>  <!--5.çocuk-->
+
+    <ul>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+
+    </ul>
+
+</body>
+</html>
